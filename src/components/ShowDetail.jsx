@@ -30,6 +30,7 @@ const ShowDetail = ({match}) => {
         console.log(error);
         setIsLoading(true);
       }
+      
     };
     fetchDetails();
   }, [match.params.movieID]);
