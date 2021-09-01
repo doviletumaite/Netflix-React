@@ -1,8 +1,9 @@
 import { Container, Card, ListGroup, ListGroupItem } from "react-bootstrap"
-
-const detail = ({details}) => {
+import { Link } from "react-router-dom"
+const Detail = ({details}) => {
  return (
      <Container>
+         <Link>
          <Card style={{ width: '18rem' }}>
   <Card.Img variant="top" src={details.Poster} />
   <Card.Body>
@@ -22,7 +23,8 @@ const detail = ({details}) => {
     <Card.Link href="#">Another Link</Card.Link>
   </Card.Body>
 </Card>
+</Link>
      </Container>
  )
 }
-export default detail 
+export default Detail
