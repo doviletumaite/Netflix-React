@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { Alert, Container, Row, Col, Spinner } from "react-bootstrap"
+import detail from "./Detail"
 
 const ShowDetail = () => {
 
@@ -29,7 +30,7 @@ fetchDetails()
 
 return (
     <Container>
-        <div>something</div>
+        <detail/>
     </Container>
 )
 
