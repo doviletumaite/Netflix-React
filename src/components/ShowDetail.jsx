@@ -8,7 +8,9 @@ const ShowDetail = () => {
     useEffect(() =>{
 const fetchDetails = async () =>{ 
   try {
-      let response = await   fetch ("http://www.omdbapi.com/?i=tt3896198&apikey=10945bda")
+      let response = await   fetch ("http://www.omdbapi.com/?i=tt3896198&apikey=10945bda", {
+          method: "GET"
+      })
       if(response.ok) {
           let details = await response.json()
           setIsLoading(false)
