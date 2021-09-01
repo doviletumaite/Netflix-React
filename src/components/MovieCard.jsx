@@ -5,7 +5,7 @@ class MovieCard extends React.Component {
   render() {
       console.log(this.props.movie)
     return (
-      <Link to="/showdetail">
+      <Link to="/details/:movieID">
       <a className="col-2 my-3" key={this.props.movieId}>
           <div className='movieCard h-100'>
               <img className='w-100' src={this.props.img}/>

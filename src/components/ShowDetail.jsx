@@ -13,13 +13,14 @@ const ShowDetail = ({match}) => {
       try {
         let response = await fetch(
           "http://www.omdbapi.com/?i=tt3896198&apikey=10945bda" + id,
-          {
-            method: "GET",
-          }
+        //   {
+        //     method: "GET",
+        //   }
         );
         if (id) {
           let details = await response.json();
           setIsLoading(false);
+          setInfo(details)
           console.log("movies detail", details);
         } else {
           console.log("something wrong");
@@ -44,7 +45,7 @@ const ShowDetail = ({match}) => {
               Authorization:
                 "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTJiYTY0Nzk5OGZmODAwMTVhMzM1ZTEiLCJpYXQiOjE2MzAyNTA1NjcsImV4cCI6MTYzMTQ2MDE2N30.fjwBzicLDqvpDPoHDNeOTPFCpomeo2Zu4lr109e37EQ",
             },
-            method: "POST",
+            // method: "POST",
             body: JSON.stringify()
           }
         );

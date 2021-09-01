@@ -5,7 +5,7 @@ import Gallerie from "./components/Gallerie";
 import MyFooter from "./components/MyFooter";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ShowDetail from "./components/ShowDetail";
-import detail from "./components/Detail";
+
 
 function App() {
   return (
