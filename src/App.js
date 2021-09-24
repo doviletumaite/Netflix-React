@@ -13,9 +13,9 @@ function App() {
       <div className="body">
         <MyNavbar />
        
-        <Route path="/details/:movieID" render={(routerProps) => <ShowDetail {...routerProps} title="Movie Details" />} />
+        {/* <Route path="/details/:movieID" render={(routerProps) => <ShowDetail {...routerProps} title="Movie Details" />} /> */}
   
-
+        <Gallerie/>
         <div className="break"></div>
         <MyFooter />
       </div>
