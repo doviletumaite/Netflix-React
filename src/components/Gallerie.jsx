@@ -3,9 +3,9 @@ import GallerieRow from "./GallerieRow";
 import React from "react";
 
 class Gallerie extends React.Component {
-  state = {
-    search: this.props.sendSearch,
-  };
+  // state = {
+  //   search: this.props.sendSearch,
+  // };
 
   render() {
     return (

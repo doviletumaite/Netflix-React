@@ -26,7 +26,9 @@ const GallerieRow = () => {
           isLoading ?   
           <Spinner animation="grow" variant="warning" className="mx-auto my-5"/> 
           : 
-          movie.map(mov => <MovieCard key={mov.imdbID} src={mov.Poster}/>)
+          movie.map(mov => <div> <p> {mov.title} </p> <img src={mov.Poster} />
+            </div>
+            )
         }
         </div>
     );
